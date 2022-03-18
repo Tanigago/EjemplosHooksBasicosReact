@@ -38,7 +38,16 @@ Modificación:
 nombreSetterState(nuevoValor);
 ```
 ### useEffect
-Permite controlar la ejecución de un bloque de código en relación al redibujo del compomente. En todos los casos, el bloque de codigo a controlar se ejecuta cuando el componente se crea en la pantalla.
+Permite controlar la ejecución de un bloque de código en relación al redibujo del compomente. En todos los casos, el bloque de codigo a controlar se ejecuta cuando el componente se crea en la pantalla. La estructura básica es la siguiente:
+```js
+useEffect (
+    ()=>{
+
+        return ()=>{}
+    },
+    [prop1, prop2, state1, state2, ...]
+)
+```
 ```js
 useEffect (
     ()=>{
