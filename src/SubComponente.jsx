@@ -7,7 +7,8 @@ function SubComponente ({contadorSuperior}) {
     function suma() {
         setContador(contador+1)
     }
-
+    
+//useEffect RETURN CON FUNCIÓN
     useEffect(
         ()=>{
           console.log("Renderizando subcomponente por primera vez");

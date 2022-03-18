@@ -21,7 +21,8 @@ function App() {
   function sumaRef () {
     contadorRef.current += 1;
   }
-
+  
+//useEffect ARRAY VACÍO
   useEffect(
     ()=>{
       console.log("Renderizando por primera vez");
@@ -29,6 +30,7 @@ function App() {
     []
   )
 
+//useEffect ARRAY LLENO
   useEffect(
     ()=>{
       console.log("Renderizando con contadorState");
